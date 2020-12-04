@@ -1,6 +1,6 @@
 import camelCase from "../comp.se.200-lib/src/camelCase.js";
 
-describe('at function', () => {
+describe('camelCase function', () => {
     test('CamelCase function should convert string to camel case', () => {
         const a = 'camel case';
         const expectedResult = "camelCase";
