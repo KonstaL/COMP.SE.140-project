@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "jest --coverage --collectCoverageFrom='comp.se.200-lib/src/*.js'",
+    "test": "jest --no-cache --config 'jest.config.js' --coverage --collectCoverageFrom='comp.se.200-lib/src/*.js'",
     "coveralls": "cat ./coverage/lcov.info | node node_modules/.bin/coveralls"
   },
   "repository": {
@@ -22,5 +22,10 @@
     "jest": "^26.6.3",
     "jest-chain": "^1.1.5",
     "jest-extended": "^0.11.5"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.12.9",
+    "@babel/preset-env": "^7.12.7",
+    "babel-jest": "^26.6.3"
   }
 }
