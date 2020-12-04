@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest --coverage --collectCoverageFrom='comp.se.200-lib/src/*.js'",
+    "coveralls": "cat ./coverage/lcov.info | node node_modules/.bin/coveralls"
   },
   "repository": {
     "type": "git",
@@ -17,6 +18,7 @@
   },
   "homepage": "https://github.com/KonstaL/COMP.SE.200-project#readme",
   "dependencies": {
+    "coveralls": "^3.1.0",
     "jest": "^26.6.3"
   }
 }
