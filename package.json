@@ -1,0 +1,22 @@
+{
+  "name": "comp.se.200-project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KonstaL/COMP.SE.200-project.git"
+  },
+  "author": "Vilho Aaltonen & Konsta Lehtinen",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/KonstaL/COMP.SE.200-project/issues"
+  },
+  "homepage": "https://github.com/KonstaL/COMP.SE.200-project#readme",
+  "dependencies": {
+    "jest": "^26.6.3"
+  }
+}
