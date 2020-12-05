@@ -46,12 +46,25 @@ describe("toString", () => {
         expect(result).toEqual(expectedResult);
 
     })    
+
     test("toString should return an empty string when input is null", () => {
         const argument = 0;
         const expectedResult = '-0';
         const result = toString(argument);
-
         expect(result).toEqual(expectedResult);
+    })
 
+    test("toString should return null when input is an array containing only null", () => {
+        const argument = [null];
+        const expectedResult = null;
+        const result = toString(argument);
+        expect(result).toEqual(expectedResult);
+    })
+
+    test("toString should return an empty string when input is null", () => {
+        const argument =true;
+        const expectedResult = "1";
+        const result = toString(argument);
+        expect(result).toEqual(expectedResult);
     })
 })
