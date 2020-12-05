@@ -23,4 +23,22 @@ describe("words function", () => {
         expect(result).toEqual(expect.arrayContaining(expectedResult));
         
     })
+
+
+    test("Words with an empty string as input", () => {
+        const string = '';
+        const expectedResult = [];
+        const result = words(string);
+        expect(result).toEqual(expectedResult);
+        
+    })
+
+
+    test("Words with an empty string and pattern as an input", () => {
+        const string = '';
+        const expectedResult = [];
+        const pattern = /[.]+/g
+        const result = words(string, pattern);
+        expect(result).toEqual(expect.arrayContaining(expectedResult));
+    })
 })

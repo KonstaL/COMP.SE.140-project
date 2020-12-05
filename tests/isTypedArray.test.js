@@ -8,7 +8,6 @@ describe("isTypedArray function", () => {
     })
 
     test("isTypedArra should return false when called with unclassified array", () => {
-        const a = []
         const result = isTypedArray([]);
         expect(result).toBe(false);
     })
