@@ -33,8 +33,8 @@ describe("isEmpty function", () => {
     })
 
 
-    test("isEmpty should return true with a null input", () => {
-        const input = 'string';
+    test("isEmpty should return true with an empty string input", () => {
+        const input = '';
         const result = isEmpty(input);
         expect(result).toBe(true);
     })

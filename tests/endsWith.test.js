@@ -5,26 +5,24 @@ describe("endsWith function", () => {
         const s = 'string';
         const l = 'g';
         const result = endsWith(s, l);
-        expect(result).toBe(true)
+        expect(result).toBe(true);
     })
 
 
     test("endsWith should return true when called with string and letter from position", () => {
         const s = 'string';
         const l = 'r';
-        const n = 3
+        const n = 3;
         const result = endsWith(s, l, n);
-        
-        expect(result).toBe(true)
+        expect(result).toBe(true);
     })
 
     test("endsWith should return false when called with string and wrong letter from position", () => {
         const s = 'string';
         const l = 'i';
-        const n = 2
+        const n = 2;
         const result = endsWith(s, l, n);
-        
-        expect(result).toBe(false)
+        expect(result).toBe(false);
     })
 
 })

@@ -13,6 +13,7 @@ describe("eq function", () => {
         const result = eq(a,b);
         expect(result).toBe(false);
     })
+    
     test("eq should return true when comparing two NaNs", () => {
         const result = eq(NaN, NaN);
         expect(result).toBe(true);

@@ -54,7 +54,7 @@ describe("slice function", () => {
         expect(result).toEqual(expect.arrayContaining(expectedResult));
     })
 
-    test("Slice should return empty array when given array is null", () => {
+    test("Slice should return given array when offset overflows", () => {
         const start = -5;
         const end = undefined;
         const a = [1, 2, 3, 4];
