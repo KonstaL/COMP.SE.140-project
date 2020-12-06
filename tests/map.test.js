@@ -18,7 +18,7 @@ describe("map fuction", () => {
     })
 
     
-    test("map should return original array if teher is an error", () => {
+    test("map should return an empty array if input is null", () => {
         const a = null;
         const f = (x) => x * 2;
         const result = map(a, f);

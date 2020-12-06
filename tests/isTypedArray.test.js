@@ -7,7 +7,7 @@ describe("isTypedArray function", () => {
         expect(result).toBe(true);
     })
 
-    test("isTypedArra should return false when called with unclassified array", () => {
+    test("isTypedArray should return false when called with unclassified array", () => {
         const result = isTypedArray([]);
         expect(result).toBe(false);
     })

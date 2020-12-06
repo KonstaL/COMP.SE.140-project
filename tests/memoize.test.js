@@ -14,8 +14,8 @@ describe("memeoize function", () => {
     test("Memoize should throw an error if input isn't function", () => {
         const obj = {'a': 1};
         const f =  obj.a;
-        const vals = memoize(f);
-        expect(vals).toThrow(TypeError)        
+        const result = () => memoize(f);
+        expect(result).toThrowError(TypeError)        
     })
 
 })
