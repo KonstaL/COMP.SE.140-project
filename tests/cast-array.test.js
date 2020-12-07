@@ -4,7 +4,7 @@ describe('castArray function', () => {
     test('castArray should return new array', () => {
         const a = 'string';
         const expectedResult = ['string'];
-        expect(castArray()).toEqual(expectedResult);
+        expect(castArray(a)).toEqual(expectedResult);
     });
 
     test('castArray should return empty array', () => {
