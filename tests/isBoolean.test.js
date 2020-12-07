@@ -13,8 +13,8 @@ describe("isBoolean function", () => {
         expect(result).toBe(true);
     })
 
-    test("isBoolean should return true when argument is a boolean", () => {
-        const a = [false];
+    test("isBoolean should return true when argument is a boolean object", () => {
+        const a = new Boolean(false);
         const result = isBoolean(a);
         expect(result).toBe(true);
     })
